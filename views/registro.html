@@ -6,7 +6,8 @@
     <script src="../js/materialize.js"></script>
     <link rel="stylesheet" href="../style/materialize.css">
     <link rel="stylesheet" href="../style/bootstrap-material-design.css">
-    <title>Iniciar sesión | TecnoVentas</title>
+    <link rel="stylesheet" href="../font-awesome/css/all.min.css">
+    <title>Registro | TecnoVentas</title>
 
     <style>
       body{
@@ -20,28 +21,67 @@
   <body>
     <center>
       
-      <div class="log" style="border-radius: 4%; width: 550px; margin-right:25%; margin-left:25%; margin-top: 4%; margin-bottom: 4%; background-color: rgba(255, 255, 255, 0.8); padding: 0%; filter: drop-shadow(5px 5px 10px #444);">
+      <div class="log" style="border-radius: 4%; width: 550px; margin-right:25%; margin-left:25%; margin-top: 0.2%; margin-bottom: 0.2%; background-color: rgba(0, 0, 0, 0.6); padding: 0%; filter: drop-shadow(5px 5px 10px #444); color: white;">
         <br>
         <div class="logo" style="margin: 10px;">
-          <img src="../images/logo_cut.png" alt="" width="180px" height="180px" style="border-radius: 50%; filter: drop-shadow(5px 5px 10px #444);">
+          <img src="../images/logo_cut.png" alt="" width="115px" height="115px" style="border-radius: 50%; filter: drop-shadow(5px 5px 10px #444);">
         </div>
         <div class="contenedor" style="margin: 0 auto;">
-          <h2 align="center">Iniciar Sesión</h2>
+          <h4 align="center">Registrate en TecnoVentas</h4>
         </div>
         <div style="width: 500px; margin: 0 auto; vertical-align: middle;">
-          <form class="col s12">
-            <div class="row">
-              <div class="input-field col s6">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix">First Name</label>
+          <form class="col s12" action="../controller/validate.php" method="post">
+            <div class="row" style="padding: 0%; margin: 2.5%;">
+              <div class="input-field col s12">
+                <input id="name" type="text" class="validate" name="nombre" required style="color: white;">
+                <label for="name"><i class="fas fa-user"></i>&nbsp;Nombre</label>
               </div>
               <div class="input-field col s6">
-                <i class="material-icons prefix">phone</i>
-                <input id="icon_telephone" type="tel" class="validate">
-                <label for="icon_telephone">Telephone</label>
+                <input id="apellidoP" type="text" class="validate" name="apellidoP" required style="color: white;">
+                <label for="apellidoP">Apellido Paterno</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="apellidoM" type="text" class="validate" name="apellidoM" required style="color: white;">
+                <label for="apellidoM">Apellido Materno</label>
               </div>
             </div>
+            <div class="row" style="padding: 0%; margin: 2.5%;">
+              <div class="input-field col s6">
+                <input type="email" name="correo" id="correo" required class="validate" style="color: white;">
+                <label for="correo"><i class="fas fa-at"></i>&nbsp; Correo electrónico</label>
+              </div> 
+            </div>
+            <div class="row" style="padding: 0%; margin: 2.5%;">
+              <div class="input-field col s6">
+                <input type="text" name="username" id="username" required class="validate" style="color: white;">
+                <label " for="username"><i class="fas fa-user-edit"></i>&nbsp;Nombre de usuario</label>
+              </div> 
+              <div class="input-field col s6">
+                <input id="password" type="password" class="validate" name="pwd" required style="color: white;">
+                <label for="password"><i class="fas fa-key"></i>&nbsp;Contraseña</label>
+              </div>
+            </div>
+            <div class="row" style="padding: 0%; margin: 2.5%;">
+              <div class="input-field col s6">
+                <input type="text" name="direccion" id="direccion" required class="validate" style="color: white;">
+                <label for="direccion"><i class="fas fa-map-marker-alt"></i>&nbsp;Dirección para envíos</label>
+              </div> 
+            </div>
+            <div class="row" style="padding: 0%; margin: 2.5%;">
+              <div class="input-field col s6">
+                <input type="text" name="cp" id="cp" required class="validate" style="color: white;">
+                <label for="cp"><i class="fas fa-home"></i>&nbsp;Código Postal</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="tel" name="telefono" id="telefono" required class="validate" style="color: white;">
+                <label for="telefono"><i class="fas fa-phone"></i>&nbsp;Número de contacto</label>
+              </div> 
+            </div>
+            <p>¿Ya tienes una cuenta?, inicia sesión <a href="login.html">aquí</a></p>
+            <div class="btnIS" align="center" style="filter: drop-shadow(2px 2px 2px #444);">
+              <input class="btn waves-effect waves-light" style="background-color: #1D90D6;" type="submit" name="action" value="Iniciar Sesión">
+            </div>
+            <br>
           </form>
         </div>
       </div>

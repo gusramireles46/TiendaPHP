@@ -3,21 +3,30 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="style/material-icons.css">
     <link rel="stylesheet" href="style/bootstrap-material-design.css">
     <link rel="stylesheet" href="style/estilos_principal.css">
     <link rel="stylesheet" href="style/w3.css">
     <script src="js/bootstrap-material-design.js"></script>
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
     <title>Inicio | TiendaPHP</title>
 
     <style>
-      .sliders {display: none;}
+      .sliders {
+        display: none;
+      }
     </style>
 
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap-material-design.js"></script>
-    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+
+    <script>
+      $(document).ready(
+        function() { 
+          $('body').bootstrapMaterialDesign(); 
+        }
+      );
+    </script>
 
     
 
@@ -37,18 +46,19 @@
       </header>
       <div id="dw-s2" class="bmd-layout-drawer bg-faded">
         <header>
-          <a class="navbar-brand">BIENVENIDO</a>
+          <a class="navbar-brand">Bienvenido</a>
         </header>
         <ul class="list-group">
-          <p align="center"><img src="images/circle_login.png" alt="Imagen de perfil" width="125" height="125"></p>
-          <a class="list-group-item" href="./views/login.html" style="color: black;">Iniciar Sesión</a>
-          <a class="list-group-item" href="#">Productos</a>
-          <a class="list-group-item" href="#">Carrito</a>
+          <p align="center"><img style="border-radius: 50%; filter: drop-shadow(2px 2px 2px #444);" src="images/logo_cut.png" alt="Logo" width="170px" height="170px"></p>
+          <a class="list-group-item" href="./views/login.html" style="font-size: 18px;"><i class="fas fa-sign-in-alt"></i>Iniciar Sesión</a>
+          <a class="list-group-item" href="#" style="font-size: 18px;"><i class="fas fa-store"></i>Productos</a>
+          <a class="list-group-item" href="#" style="font-size: 18px;"><i class="fas fa-shopping-cart"></i>Carrito</a>
+          <a class="list-group-item" href="#" style="font-size: 12px;">Acerca de este proyecto</a>
         </ul>
       </div>
       <main class="bmd-layout-content">
         <div class="container" style="margin-top: 15px;">
-          <div class="carrito" style="width: 1080px; height: 500px; border: 1px solid rgba(0, 0, 0, 0.1); align-content: center; ">
+          <div class="carrito" style="width: 1080px; height: 500px; align-content: center; filter: drop-shadow(4px 4px 5px #444);">
             <!-- display: table-cell; vertical-align: middle; -->
             <div class="w3-display-container sliders w3-animate-right">
               <img src="images/tecnologia.jpg" width="1080px" height="500px">
@@ -87,8 +97,8 @@
             }
           </script>
 
-          <div class="contenedor2" style="margin-left: auto; margin-right: auto;" align="center">
-            <h3>Productos destacados</h3>
+          <div class="contenedor2" style="margin-left: auto; margin-right: auto; margin-top: 3%;" align="center">
+            <h3>Productos destacados</h3><hr>
             <?php
               for ($i=0; $i < 5; $i++) {
                 ?>
