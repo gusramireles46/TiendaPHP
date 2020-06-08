@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/materialize.js"></script>
+    <link rel="stylesheet" href="../style/materialize.css">
+    <link rel="stylesheet" href="../style/bootstrap-material-design.css">
+    <title>Iniciar sesión | TecnoVentas</title>
+
+    <style>
+      body{
+        background-image: url("../images/macos.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+
+  </head>
+  <body>
+    <center>
+      
+      <div class="log" style="border-radius: 4%; width: 550px; margin-right:25%; margin-left:25%; margin-top: 4%; margin-bottom: 4%; background-color: rgba(255, 255, 255, 0.8); padding: 0%; filter: drop-shadow(5px 5px 10px #444);">
+        <br>
+        <div class="logo" style="margin: 10px;">
+          <img src="../images/logo_cut.png" alt="" width="180px" height="180px" style="border-radius: 50%; filter: drop-shadow(5px 5px 10px #444);">
+        </div>
+        <div class="contenedor" style="margin: 0 auto;">
+          <h2 align="center">Iniciar Sesión</h2>
+        </div>
+        <div style="width: 500px; margin: 0 auto; vertical-align: middle;">
+          <form class="col s12" action="../controller/validate.php" method="post">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="username" type="text" class="validate" name="username" required>
+                <label for="username" style="color: black;">Nombre de usuario o correo electrónico</label>
+              </div>
+            </div>
+            <div class="row" style="padding: 0%;">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate" name="pwd" required>
+                <label for="password" style="color: black;">Contraseña</label>
+              </div>
+            </div>
+            <p>¿No tienes cuenta?, registrate <a href="registro.html">aquí</a></p>
+            <div class="btnIS" align="center" style="filter: drop-shadow(2px 2px 2px #444);">
+              <input class="btn waves-effect waves-light" style="background-color: #1D90D6;" type="submit" name="action" value="Iniciar Sesión">
+            </div>
+            <br>
+          </form>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>

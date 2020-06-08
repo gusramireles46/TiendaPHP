@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Destacy";
+  src: url("fonts/Destacy.ttf");
+}
+
+.titulo{
+    font-family: "Destacy";
+    font-size: 2em;
+    margin: 0%;
+}
